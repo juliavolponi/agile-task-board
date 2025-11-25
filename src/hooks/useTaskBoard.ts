@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
-import { Task, TaskStatus, TaskBoardState, initialTasks, STORAGE_KEY } from '../types/TaskTypes';
-
+import type { Task, TaskStatus, TaskBoardState } from '../types/TaskTypes.ts';
+import { initialTasks, STORAGE_KEY } from '../types/TaskTypes.ts';
 /**
  * Utility function to safely load tasks from localStorage.
  */

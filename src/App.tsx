@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
-import { Plus, Loader2, Save, X } from 'lucide-react';
 import { useTaskBoard } from './hooks/useTaskBoard.ts';
 import TaskColumn from './components/TaskColumn.tsx';
-import { TaskStatus } from './types/TaskTypes.ts';
+import type { TaskStatus } from './types/TaskTypes.ts';
 
 // --- Modal Component (Kept here for simplicity, but could be separate) ---
 const AddTaskModal: React.FC<{ isOpen: boolean; onClose: () => void; onAddTask: (task: { title: string; description: string }) => void }> = ({ isOpen, onClose, onAddTask }) => {
