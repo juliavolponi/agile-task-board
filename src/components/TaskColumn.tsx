@@ -1,3 +1,5 @@
+import React, { useCallback, useMemo } from 'react';
+import { Trash2 } from 'lucide-react';
 import type { Task, TaskStatus } from '../types/TaskTypes.ts';
 import { STATUS_TITLES, STATUS_COLORS } from '../types/TaskTypes.ts';
 import type { TaskBoardAPI } from '../hooks/useTaskBoard.ts';

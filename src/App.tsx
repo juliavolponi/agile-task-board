@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+import { Plus, Loader2, Save, X } from 'lucide-react';
 import { useTaskBoard } from './hooks/useTaskBoard.ts';
 import TaskColumn from './components/TaskColumn.tsx';
 import type { TaskStatus } from './types/TaskTypes.ts';
