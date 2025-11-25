@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useMemo } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import type { Task, TaskStatus, TaskBoardState } from '../types/TaskTypes.ts';
 import { initialTasks, STORAGE_KEY } from '../types/TaskTypes.ts';
 /**

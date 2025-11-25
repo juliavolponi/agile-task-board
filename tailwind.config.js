@@ -1,17 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-    // This is the CRITICAL part. It tells Tailwind where to look for utility classes.
+module.exports = {
+    // Tells Tailwind where to scan for class names to generate CSS.
     content: [
       "./index.html",
-      "./src/**/*.{js,ts,jsx,tsx}", // Scan all files in the src folder
+      "./src/**/*.{js,ts,jsx,tsx}",
     ],
+    // Define custom themes, colors, spacing, etc.
     theme: {
-      extend: {
-        // We set 'Inter' as the default font
-        fontFamily: {
-          sans: ['Inter', 'sans-serif'],
-        },
-      },
+      extend: {},
     },
     plugins: [],
   }
